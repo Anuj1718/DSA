@@ -31,8 +31,11 @@ int main()
     int ans = num;
 
     for(int i = 1; i < pow; i++) {
-        ans = ans * num;
+        ans = ans * num; 
     }
+    // or num**pow (not in c++)
+    // operators in c++ : +, -, *, /, %
+
     cout<<ans;
 
     // Factorial of a number
@@ -49,15 +52,26 @@ int main()
     cin>>num;
 
     if(num < 2) {
-        return 0;
+        return 0; // so that program ends here, doesn't go to "Prime" print
     }
     else {
         for(int i = 2; i <= num - 1; i++) {
             if(num % i == 0){
                 cout<<"Not Prime";
-                return 0;
+                return 0; //so that program ends here, doesn't go to "Prime" print
             }
         }
         cout<<"Prime";
     }
+    return 0; //can write at the end of main function
 }
+
+//break vs return 0
+// | Aspect                 | `break` | `return 0` |
+// | ---------------------- | ------- | ---------- |
+// | Exits loop             | ✅       | ✅          |
+// | Exits function         | ❌       | ✅          |
+// | Exits program (`main`) | ❌       | ✅          |
+// | Needs extra logic      | Often   | No         |
+// | Strength               | Weak    | Strong     |
+// In summary, `break` exits loops, while `return 0` exits functions and the program.

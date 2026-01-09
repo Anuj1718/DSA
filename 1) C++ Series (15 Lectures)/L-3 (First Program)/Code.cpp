@@ -7,7 +7,7 @@ int main() {
     // \n is used for new line
     //endl can also be used for new line
     //difference between \n and endl is that endl flushes the buffer meaning it forces the output to be written to the console immediately
-
+    
     cout<<"Hello Everyone \n";
     cout<<3 + 2 <<endl;
 
