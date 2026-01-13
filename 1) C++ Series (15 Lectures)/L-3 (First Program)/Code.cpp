@@ -48,3 +48,25 @@ int main() {
 //17. struct - user-defined type that groups related variables of different types
 //18. union - user-defined type that allows storing different data types in the same memory location
 //19. nullptr_t - type of the null pointer literal nullptr
+
+
+// | Type        | Bits | Bytes | Decimal digits (max) | Min value                  | Max value                 |
+// | ----------- | ---- | ----- | -------------------- | -------------------------- | ------------------------- |
+// | `int`       | 32   | 4     | 10                   | −2,147,483,648             | 2,147,483,647             |
+// | `long`      | 64*  | 8     | 19                   | −9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 |
+// | `long long` | 64   | 8     | 19                   | −9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 |
+// * On some systems, `long` may be 32 bits.
+
+
+// Bits → Digits Logic (why these numbers)
+
+// Signed n-bit integer
+
+// max ≈ 2^(n−1) − 1
+// digits ≈ floor(log10(2^(n−1))) + 1
+
+
+// Unsigned n-bit integer
+
+// max ≈ 2^n − 1
+// digits ≈ floor(log10(2^n)) + 1

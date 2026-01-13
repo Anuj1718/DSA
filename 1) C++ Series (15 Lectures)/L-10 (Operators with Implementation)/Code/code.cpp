@@ -145,5 +145,13 @@ int main()
     // Comparision Operators: {>, <, >=, =<} > {==, !=}
     // Bitwise Operators: {<<, >>} > {&, ^, |}
     // Logical Operators: {&&} > {||}
+
+
+    //precedence from high to low:
+    // 1. Arithmetic Operators
+    // 2. Comparision Operators
+    // 3. Bitwise Operators
+    // 4. Logical Operators
+    // 5. Assignment Operators
     
 }

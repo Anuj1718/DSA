@@ -152,3 +152,6 @@ int main()
     }
     cout << ans1;
 }
+
+
+// hexa conversion will be taught in strings 

@@ -5,3 +5,12 @@ build/
 *.ilk
 *.log
 .vs/
+
+# C++ build artifacts (Windows)
+*.exe
+*.o
+*.out
+
+# Optional
+a.exe
+main.exe
