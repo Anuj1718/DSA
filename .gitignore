@@ -19,3 +19,5 @@ main.exe
 *.code-workspace
 *.user
 *.suo
+*.ncb
+*.sdf
