@@ -24,6 +24,7 @@ int main()
         for (int i = 3; i <= n; i++)
         {
             current = last + prev;
+            // cout << current; // if u wanna see the series uncomment this line
             last = prev;
             prev = current;
         }
